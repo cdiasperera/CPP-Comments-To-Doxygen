@@ -7,6 +7,7 @@ This is a small project to convert cpp (and c) style documentation comments into
 * To all conversions from doxygen back to CPP-style comments
 * To add more rigorous cpp-style to doxygen style conversions.
 * Unit Tests
+* Documentation
 
 ## Contributing
 * If you want more functionality (either in the TODOs or new functionalities) please submit an issue.

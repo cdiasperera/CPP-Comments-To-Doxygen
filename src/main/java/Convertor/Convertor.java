@@ -1,17 +1,15 @@
 package Convertor;
 
 import Convertor.FileContentTypes.Code;
-import Convertor.FileContentTypes.DocumentationComments.DoxygenStyleDocumentationComment;
-import Convertor.FileContentTypes.NonDocumentationComments;
-import Convertor.FileContentTypes.DocumentationComments.StandardStyleDocumentationComment;
+import Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
+import Convertor.FileContentTypes.FileContent;
+import Convertor.FileContentTypes.NonDocumentationComment;
 import Exceptions.ConvertorNoStringException;
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 
-public class Convertor {
-    private final Logger logger = LogManager.getLogger(Convertor.class);
+public abstract class Convertor {
     String toConvert = null;
     String convertedString = null;
     public void setStringToConvert(String toConvert) {
@@ -28,12 +26,9 @@ public class Convertor {
             throw new ConvertorNoStringException("No string to convert");
         }
 
-        convertString();
+        convertedString = convertString();
 
         return convertedString;
-
-
-
     }
 
     public void setToConvert(String toConvert) {
@@ -41,25 +36,62 @@ public class Convertor {
         this.convertedString = null;
     }
 
-    private void convertString() {
+    private String convertString() {
         CommentParser parser = new CommentParser(toConvert);
 
         // Extract file contents
-        ArrayList<StandardStyleDocumentationComment> comments = parser.getDocumentationComments();
+        ArrayList<DocumentationComment> comments = getDocumentationComments();
         ArrayList<Code> codes = parser.getCodes();
-        ArrayList<NonDocumentationComments> nonDocumentationComments = parser.getNonDocumentationComments();
+        ArrayList<NonDocumentationComment> nonDocumentationComments = parser.getNonDocumentationComments();
 
-        // Create converted doxygen comments
-        ArrayList<DoxygenStyleDocumentationComment> convertedComments = convertComments(comments);
+        ArrayList<DocumentationComment> convertedComments = convertComments(comments);
 
-        mergeFileContents(codes, nonDocumentationComments, convertedComments);
+        return convertedString = mergeFileContents(codes, nonDocumentationComments, convertedComments);
     }
 
-    private void mergeFileContents(ArrayList<Code> codes, ArrayList<NonDocumentationComments> nonDocumentationComments, ArrayList<DoxygenStyleDocumentationComment> convertedComments) {
-        throw new UnsupportedOperationException();
+    protected abstract ArrayList<DocumentationComment> getDocumentationComments();
+
+    private String mergeFileContents(
+            ArrayList<Code> codes,
+            ArrayList<NonDocumentationComment> nonDocumentationComments,
+            ArrayList<DocumentationComment> documentationComments
+    ) {
+        ArrayList<FileContent> allContent = mergeAndSortContents(codes, nonDocumentationComments, documentationComments);
+
+        return createStringFromContentList(allContent);
     }
 
-    private ArrayList<DoxygenStyleDocumentationComment> convertComments(ArrayList<StandardStyleDocumentationComment> comments) {
-        throw new UnsupportedOperationException();
+    private String createStringFromContentList(ArrayList<FileContent> allContent) {
+        StringBuilder sb = new StringBuilder();
+        allContent.forEach(fileContent -> sb.append(fileContent.getContentAsString()));
+
+        return sb.toString();
+    }
+
+    /**
+     * @param codes The code content in the file
+     * @param nonDocumentationComments The non-docu comments in the file
+     * @param documentationComments The docu comments in the file
+     * @return The array list of file contents for the file, sorted by the position they appear in the file
+     */
+    private ArrayList<FileContent> mergeAndSortContents(ArrayList<Code> codes, ArrayList<NonDocumentationComment> nonDocumentationComments, ArrayList<DocumentationComment> documentationComments) {
+        ArrayList<FileContent> allContent = new ArrayList<>();
+
+        allContent.addAll(codes);
+        allContent.addAll(nonDocumentationComments);
+        allContent.addAll(documentationComments);
+
+        allContent.sort(Comparator.comparingInt(FileContent::getPosition));
+        return allContent;
+    }
+
+    private ArrayList<DocumentationComment> convertComments(ArrayList<DocumentationComment> comments) {
+        ArrayList<DocumentationComment> convertedComments = new ArrayList<>();
+
+        comments.forEach(comment -> convertedComments.add(
+                comment.generateConvertedComment()
+        ));
+
+        return convertedComments;
     }
 }
