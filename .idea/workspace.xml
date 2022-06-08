@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Exceptions/ConvertorNoStringException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/Code.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/DocumentationComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/DoxygenStyleDocumentationComment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/FileContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/NonDocumentationComments.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/StandardStyleDocumentationComment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Convertor/Convertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/OutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/IO/OutputWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -44,13 +47,21 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/cdper/IdeaProjects/CPP-Comments-To-Doxygen/src/main/resources",
     "nodejs_package_manager_path": "npm",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "settings.editor.selected.configurable": "com.maddyhome.idea.vim.ui.VimEmulationConfigurable"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="Convertor" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\cdper\IdeaProjects\CPP-Comments-To-Doxygen\src\main\resources" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\cdper\IdeaProjects\CPP-Comments-To-Doxygen\src\main\resources" />
       <recent name="C:\Users\cdper\IdeaProjects\CPP-Comments-To-Doxygen" />
@@ -83,7 +94,7 @@
       <updated>1654706752321</updated>
       <workItem from="1654706756758" duration="792000" />
       <workItem from="1654707571931" duration="2844000" />
-      <workItem from="1654714410528" duration="2233000" />
+      <workItem from="1654714410528" duration="3715000" />
     </task>
     <servers />
   </component>

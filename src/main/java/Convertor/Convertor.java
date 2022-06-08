@@ -1,8 +1,14 @@
 package Convertor;
 
+import Convertor.FileContentTypes.Code;
+import Convertor.FileContentTypes.DocumentationComments.DoxygenStyleDocumentationComment;
+import Convertor.FileContentTypes.NonDocumentationComments;
+import Convertor.FileContentTypes.DocumentationComments.StandardStyleDocumentationComment;
 import Exceptions.ConvertorNoStringException;
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
+
+import java.util.ArrayList;
 
 public class Convertor {
     private final Logger logger = LogManager.getLogger(Convertor.class);
@@ -36,6 +42,21 @@ public class Convertor {
     }
 
     private void convertString() {
-        convertedString = toConvert;
+        CommentParser parser = new CommentParser(toConvert);
+
+        ArrayList<StandardStyleDocumentationComment> comments = parser.getDocumentationComments();
+        ArrayList<Code> codes = parser.getCodes();
+        ArrayList<NonDocumentationComments> nonDocumentationComments = parser.getNonDocumentationComments();
+        ArrayList<DoxygenStyleDocumentationComment> convertedComments = convertComments(comments);
+
+        merge(codes, nonDocumentationComments, convertedComments);
+    }
+
+    private void merge(ArrayList<Code> codes, ArrayList<NonDocumentationComments> nonDocumentationComments, ArrayList<DoxygenStyleDocumentationComment> convertedComments) {
+
+    }
+
+    private ArrayList<DoxygenStyleDocumentationComment> convertComments(ArrayList<StandardStyleDocumentationComment> comments) {
+        return null;
     }
 }
