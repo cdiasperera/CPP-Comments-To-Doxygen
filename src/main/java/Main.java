@@ -1,4 +1,5 @@
 import Convertor.Convertor;
+import Exceptions.ConvertorNoStringException;
 import IO.InputReader;
 import IO.OutputWriter;
 import org.apache.log4j.BasicConfigurator;
@@ -19,9 +20,13 @@ public class Main {
 
         Convertor convertor = new Convertor();
         InputReader ir = new InputReader(args[INPUT_FILE]);
-        convertor.setStringToConvert(ir.readString());
+        convertor.setStringToConvert(ir.getContents());
 
         OutputWriter ow = new OutputWriter(args[OUTPUT_FILE]);
-        ow.write(convertor.convertedString());
+        try {
+            ow.write(convertor.getConvertedString());
+        } catch (ConvertorNoStringException e) {
+            logger.error("Error during conversion");
+        }
     }
 }

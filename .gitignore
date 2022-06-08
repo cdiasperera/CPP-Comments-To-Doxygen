@@ -36,3 +36,6 @@ build/
 
 ### Mac OS ###
 .DS_Store
+
+/src/main/resources/converted.h
+/src/main/resources/test.h
