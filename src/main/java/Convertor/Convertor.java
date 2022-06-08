@@ -44,19 +44,22 @@ public class Convertor {
     private void convertString() {
         CommentParser parser = new CommentParser(toConvert);
 
+        // Extract file contents
         ArrayList<StandardStyleDocumentationComment> comments = parser.getDocumentationComments();
         ArrayList<Code> codes = parser.getCodes();
         ArrayList<NonDocumentationComments> nonDocumentationComments = parser.getNonDocumentationComments();
+
+        // Create converted doxygen comments
         ArrayList<DoxygenStyleDocumentationComment> convertedComments = convertComments(comments);
 
-        merge(codes, nonDocumentationComments, convertedComments);
+        mergeFileContents(codes, nonDocumentationComments, convertedComments);
     }
 
-    private void merge(ArrayList<Code> codes, ArrayList<NonDocumentationComments> nonDocumentationComments, ArrayList<DoxygenStyleDocumentationComment> convertedComments) {
-
+    private void mergeFileContents(ArrayList<Code> codes, ArrayList<NonDocumentationComments> nonDocumentationComments, ArrayList<DoxygenStyleDocumentationComment> convertedComments) {
+        throw new UnsupportedOperationException();
     }
 
     private ArrayList<DoxygenStyleDocumentationComment> convertComments(ArrayList<StandardStyleDocumentationComment> comments) {
-        return null;
+        throw new UnsupportedOperationException();
     }
 }

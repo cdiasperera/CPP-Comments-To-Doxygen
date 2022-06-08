@@ -8,18 +8,18 @@ import java.util.ArrayList;
 
 public class CommentParser {
     public CommentParser(String toConvert) {
-
+        throw new UnsupportedOperationException();
     }
 
     public ArrayList<StandardStyleDocumentationComment> getDocumentationComments() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public ArrayList<Code> getCodes() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 
     public ArrayList<NonDocumentationComments> getNonDocumentationComments() {
-        return null;
+        throw new UnsupportedOperationException();
     }
 }
