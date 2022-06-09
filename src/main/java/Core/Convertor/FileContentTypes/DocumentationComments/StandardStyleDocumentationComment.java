@@ -1,6 +1,6 @@
-package Convertor.FileContentTypes.DocumentationComments;
+package Core.Convertor.FileContentTypes.DocumentationComments;
 
-public class DoxygenStyleDocumentationComment extends DocumentationComment {
+public class StandardStyleDocumentationComment extends DocumentationComment {
     @Override
     public DoxygenStyleDocumentationComment generateConvertedComment() {
         throw new UnsupportedOperationException();

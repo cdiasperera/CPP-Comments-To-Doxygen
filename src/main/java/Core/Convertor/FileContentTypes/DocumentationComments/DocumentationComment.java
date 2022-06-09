@@ -1,6 +1,6 @@
-package Convertor.FileContentTypes.DocumentationComments;
+package Core.Convertor.FileContentTypes.DocumentationComments;
 
-import Convertor.FileContentTypes.FileContent;
+import Core.Convertor.FileContentTypes.FileContent;
 
 public abstract class DocumentationComment extends FileContent {
     public abstract DoxygenStyleDocumentationComment generateConvertedComment();

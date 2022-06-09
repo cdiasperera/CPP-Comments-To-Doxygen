@@ -1,6 +1,6 @@
-package Convertor;
+package Core.Convertor;
 
-import Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
+import Core.Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
 
 import java.util.ArrayList;
 

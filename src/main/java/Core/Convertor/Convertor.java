@@ -1,10 +1,10 @@
-package Convertor;
+package Core.Convertor;
 
-import Convertor.FileContentTypes.Code;
-import Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
-import Convertor.FileContentTypes.FileContent;
-import Convertor.FileContentTypes.NonDocumentationComment;
-import Exceptions.ConvertorNoStringException;
+import Core.Convertor.FileContentTypes.Code;
+import Core.Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
+import Core.Convertor.FileContentTypes.FileContent;
+import Core.Convertor.FileContentTypes.NonDocumentationComment;
+import Core.Exceptions.ConvertorNoStringException;
 
 import java.util.ArrayList;
 import java.util.Comparator;

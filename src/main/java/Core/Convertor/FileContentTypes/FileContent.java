@@ -1,4 +1,4 @@
-package Convertor.FileContentTypes;
+package Core.Convertor.FileContentTypes;
 
 public abstract class FileContent {
     /**
