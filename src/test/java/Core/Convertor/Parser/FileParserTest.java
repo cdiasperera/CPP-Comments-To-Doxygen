@@ -1,10 +1,10 @@
-package Core.Convertor;
+package Core.Convertor.Parser;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ParserTest {
+class FileParserTest {
 
     @Test
     void getCodes() {

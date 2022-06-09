@@ -4,7 +4,7 @@ public abstract class FileContent {
     /**
      * This is the position of content, in the file it was extracted from.
      */
-    private static int position;
+    private int position;
 
     public int getPosition() {
         return position;
@@ -12,5 +12,9 @@ public abstract class FileContent {
 
     public String getContentAsString() {
         throw new UnsupportedOperationException();
+    }
+
+    public void setPosition(int position) {
+        this.position = position;
     }
 }

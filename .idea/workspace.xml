@@ -5,27 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/CPPConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/ConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/DoxygenConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/IO/InputReaderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/IO/OutputWriterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Core/UI/ValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/CodeParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/DoxygenStyleDocumentationCommentParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/FileContentParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/NonDocumentationCommentParser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/StandardStyleDocumentationCommentParser.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/CPPConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/CPPConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/CommentParser.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Convertor.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/DoxygenConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/DoxygenConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/CPPConvertorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/CommentParserTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/ConvertorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/DoxygenConvertorTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationCommentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/FileContentTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/ParserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/UI/ValidatorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Core/Convertor/ParserTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/Parser/FileParserTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,8 +30,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -75,6 +66,8 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Core.Convertor.Parser.FileContentParser" />
+      <recent name="Core.Convertor.Parser" />
       <recent name="Convertor" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -93,11 +86,11 @@
       <recent name="Core" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Core.Convertor.Parser" />
       <recent name="Core.UI" />
       <recent name="Core.IO" />
       <recent name="Core.Convertor" />
       <recent name="UI" />
-      <recent name="Convertor.FileContentTypes.DocumentationComments" />
     </key>
   </component>
   <component name="RunManager" selected="Application.Core.Main">
@@ -165,7 +158,7 @@
       <workItem from="1654706756758" duration="792000" />
       <workItem from="1654707571931" duration="2844000" />
       <workItem from="1654714410528" duration="6719000" />
-      <workItem from="1654758632638" duration="4048000" />
+      <workItem from="1654758632638" duration="6043000" />
     </task>
     <servers />
   </component>

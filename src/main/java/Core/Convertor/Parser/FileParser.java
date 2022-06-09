@@ -1,4 +1,4 @@
-package Core.Convertor;
+package Core.Convertor.Parser;
 
 import Core.Convertor.FileContentTypes.Code;
 import Core.Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
@@ -6,17 +6,34 @@ import Core.Convertor.FileContentTypes.DocumentationComments.DoxygenStyleDocumen
 import Core.Convertor.FileContentTypes.DocumentationComments.StandardStyleDocumentationComment;
 import Core.Convertor.FileContentTypes.FileContent;
 import Core.Convertor.FileContentTypes.NonDocumentationComment;
+import Core.Convertor.Parser.FileContentParser.FileContentParser;
 
 import java.util.ArrayList;
 
-public class Parser {
+public class FileParser {
     private ArrayList<FileContent> fileContents;
-    public Parser(String fileContentsAsString) {
+    public FileParser(String fileContentsAsString) {
         parse(fileContentsAsString);
     }
 
     private void parse(String fileContentsAsString) {
-        throw new UnsupportedOperationException();
+
+        FileContentParser[] parsersArray = FileContentParser.getAllParsers();
+
+        String copy = fileContentsAsString;
+
+        int currentPosition = 0;
+        while (!copy.isEmpty()) {
+            for (FileContentParser parser : parsersArray) {
+                FileContent parsedContent = parser.parse(copy);
+                if (parsedContent != null) {
+                    copy = parser.getContentAfterParsing(copy);
+                    parsedContent.setPosition(currentPosition);
+                    ++currentPosition;
+                    break;
+                }
+            }
+        }
     }
 
     public ArrayList<Code> getCodes() {
