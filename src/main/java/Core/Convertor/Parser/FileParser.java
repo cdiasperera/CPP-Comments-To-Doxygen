@@ -11,7 +11,7 @@ import Core.Convertor.Parser.FileContentParser.FileContentParser;
 import java.util.ArrayList;
 
 public class FileParser {
-    private ArrayList<FileContent> fileContents;
+    private final ArrayList<FileContent> fileContents = new ArrayList<>();
     public FileParser(String fileContentsAsString) {
         parse(fileContentsAsString);
     }
@@ -26,10 +26,11 @@ public class FileParser {
         while (!copy.isEmpty()) {
             for (FileContentParser parser : parsersArray) {
                 FileContent parsedContent = parser.parse(copy);
-                if (parsedContent != null) {
+                if (!parsedContent.getContentAsString().isEmpty()) {
                     copy = parser.getContentAfterParsing(copy);
                     parsedContent.setPosition(currentPosition);
                     ++currentPosition;
+                    fileContents.add(parsedContent);
                     break;
                 }
             }

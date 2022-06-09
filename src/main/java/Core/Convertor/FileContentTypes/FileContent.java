@@ -6,12 +6,18 @@ public abstract class FileContent {
      */
     private int position;
 
+    private final String content;
+
+    public FileContent(String content) {
+        this.content = content;
+    }
+
     public int getPosition() {
         return position;
     }
 
     public String getContentAsString() {
-        throw new UnsupportedOperationException();
+        return content;
     }
 
     public void setPosition(int position) {

@@ -1,15 +1,17 @@
 package Core.Convertor.Parser.FileContentParser;
 
+import Core.Convertor.FileContentTypes.DocumentationComments.DoxygenStyleDocumentationComment;
 import Core.Convertor.FileContentTypes.FileContent;
 
 public class DoxygenStyleDocumentationCommentParser extends FileContentParser {
     @Override
-    public FileContent parse(String copy) {
-        throw new UnsupportedOperationException();
+    protected FileContent constructFileContent(String fileContentAsString) {
+        return new DoxygenStyleDocumentationComment(fileContentAsString);
     }
 
     @Override
-    public String getContentAfterParsing(String copy) {
+    protected boolean endsParsedItem(String currLine)  {
         throw new UnsupportedOperationException();
     }
+
 }
