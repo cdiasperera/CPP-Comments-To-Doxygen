@@ -1,18 +1,13 @@
-package UI;
+package Core.Convertor;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class ValidatorTest {
+class DoxygenConvertorTest {
 
     @Test
-    void hasErrors() {
-        fail();
-    }
-
-    @Test
-    void getMainError() {
+    void getDocumentationComments() {
         fail();
     }
 }

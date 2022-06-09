@@ -1,13 +1,13 @@
-package Convertor;
+package Core.IO;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class DoxygenConvertorTest {
+class InputReaderTest {
 
     @Test
-    void getDocumentationComments() {
+    void getContents() {
         fail();
     }
 }

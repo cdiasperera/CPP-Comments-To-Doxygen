@@ -1,10 +1,10 @@
-package Convertor;
+package Core.Convertor;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class CommentParserTest {
+class ParserTest {
 
     @Test
     void getCodes() {

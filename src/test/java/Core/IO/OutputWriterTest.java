@@ -1,13 +1,13 @@
-package Convertor.FileContentTypes;
+package Core.IO;
 
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class FileContentTest {
+class OutputWriterTest {
 
     @Test
-    void getContentAsString() {
+    void write() {
         fail();
     }
 }

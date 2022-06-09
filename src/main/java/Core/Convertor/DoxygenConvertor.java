@@ -7,7 +7,7 @@ import java.util.ArrayList;
 public class DoxygenConvertor extends Convertor {
     @Override
     protected ArrayList<DocumentationComment> getDocumentationComments() {
-        CommentParser parser = new CommentParser(toConvert);
+        Parser parser = new Parser(toConvert);
 
         return parser.getDoxygenStyleDocumentationComments();
     }

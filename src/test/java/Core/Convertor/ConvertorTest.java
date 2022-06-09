@@ -1,4 +1,4 @@
-package Convertor;
+package Core.Convertor;
 
 import org.junit.jupiter.api.Test;
 

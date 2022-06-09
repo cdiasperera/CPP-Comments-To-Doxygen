@@ -5,32 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Core/UI/Validator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/CPPConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/CommentParserTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/ConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/DoxygenConvertorTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationCommentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationCommentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/FileContentTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/UI/ValidatorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/CPPConvertorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/ConvertorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/DoxygenConvertorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/IO/InputReaderTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/IO/OutputWriterTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Core/UI/ValidatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/CPPConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/CPPConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/CommentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/CommentParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Convertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/DoxygenConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/DoxygenConvertor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/Code.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/Code.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/FileContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Convertor/FileContentTypes/NonDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/NonDocumentationComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Exceptions/ConvertorNoStringException.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Exceptions/ConvertorNoStringException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/InputReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/IO/InputReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/IO/OutputWriter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/IO/OutputWriter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/CPPConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/CPPConvertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/CommentParser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Convertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Convertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/DoxygenConvertor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/DoxygenConvertor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/CPPConvertorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/CommentParserTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/ConvertorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/DoxygenConvertorTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationCommentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationCommentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Convertor/FileContentTypes/FileContentTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MainTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Core/Convertor/ParserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UI/ValidatorTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,14 +93,14 @@
       <recent name="Core" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="Core.UI" />
+      <recent name="Core.IO" />
+      <recent name="Core.Convertor" />
       <recent name="UI" />
       <recent name="Convertor.FileContentTypes.DocumentationComments" />
-      <recent name="Convertor.FileContentTypes" />
-      <recent name="Convertor" />
-      <recent name="" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Core.Main">
     <configuration name="Core.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Core.Main" />
       <module name="CPP-Comments-To-Doxygen" />
@@ -114,9 +109,48 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="All in CPP-Comments-To-Doxygen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CPP-Comments-To-Doxygen" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Convertor in CPP-Comments-To-Doxygen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CPP-Comments-To-Doxygen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Convertor.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Convertor" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UI in CPP-Comments-To-Doxygen" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="CPP-Comments-To-Doxygen" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="UI.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="UI" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Core.Main" />
+        <item itemvalue="JUnit.All in CPP-Comments-To-Doxygen" />
+        <item itemvalue="JUnit.UI in CPP-Comments-To-Doxygen" />
+        <item itemvalue="JUnit.Convertor in CPP-Comments-To-Doxygen" />
       </list>
     </recent_temporary>
   </component>
@@ -131,7 +165,7 @@
       <workItem from="1654706756758" duration="792000" />
       <workItem from="1654707571931" duration="2844000" />
       <workItem from="1654714410528" duration="6719000" />
-      <workItem from="1654758632638" duration="1380000" />
+      <workItem from="1654758632638" duration="4048000" />
     </task>
     <servers />
   </component>

@@ -37,7 +37,7 @@ public abstract class Convertor {
     }
 
     private String convertString() {
-        CommentParser parser = new CommentParser(toConvert);
+        Parser parser = new Parser(toConvert);
 
         // Extract file contents
         ArrayList<DocumentationComment> comments = getDocumentationComments();
