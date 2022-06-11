@@ -4,6 +4,7 @@ import Core.Convertor.FileContentTypes.DocumentationComments.StandardStyleDocume
 import Core.Convertor.FileContentTypes.FileContent;
 
 public class StandardStyleDocumentationCommentParser extends FileContentParser {
+    private boolean insideComment = false;
     @Override
     protected FileContent constructFileContent(String fileContentAsString) {
         return new StandardStyleDocumentationComment(fileContentAsString);
@@ -11,7 +12,20 @@ public class StandardStyleDocumentationCommentParser extends FileContentParser {
 
     @Override
     protected boolean endsParsedItem(String currLine) {
-        throw new UnsupportedOperationException();
+        // Check if we have opened a comment.
+        if (currLine.matches("\s*/\\*\\*.*")) {
+            insideComment = true;
+            return false;
+        }
+
+        // Check if we have closed a comment. We are still technically inside a comment, even if true.
+        if (currLine.matches("\s*\\*/.*")) {
+            insideComment = false;
+            return false;
+        }
+
+        return !insideComment;
+
     }
 
 }

@@ -11,7 +11,7 @@ public class DoxygenStyleDocumentationCommentParser extends FileContentParser {
 
     @Override
     protected boolean endsParsedItem(String currLine)  {
-        throw new UnsupportedOperationException();
+        return !currLine.matches("\s*///.*");
     }
 
 }
