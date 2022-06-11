@@ -4,9 +4,9 @@ public abstract class FileContent {
     /**
      * This is the position of content, in the file it was extracted from.
      */
-    private int position;
+    protected int position;
 
-    private final String content;
+    protected final String content;
 
     public FileContent(String content) {
         this.content = content;

@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/DoxygenStyleDocumentationCommentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/DoxygenStyleDocumentationCommentParser.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/StandardStyleDocumentationCommentParser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Parser/FileContentParser/StandardStyleDocumentationCommentParser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -152,7 +151,7 @@
       <workItem from="1654758632638" duration="6821000" />
       <workItem from="1654780648740" duration="5727000" />
       <workItem from="1654803161018" duration="2093000" />
-      <workItem from="1654935008571" duration="679000" />
+      <workItem from="1654935008571" duration="859000" />
     </task>
     <servers />
   </component>

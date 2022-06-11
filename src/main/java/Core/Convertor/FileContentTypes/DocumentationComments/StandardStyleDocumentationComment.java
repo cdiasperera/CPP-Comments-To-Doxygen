@@ -7,6 +7,11 @@ public class StandardStyleDocumentationComment extends DocumentationComment {
 
     @Override
     public DoxygenStyleDocumentationComment generateConvertedComment() {
+
+        // Get params
+        // Get returns
+        // Get summary
+        // Build DSDC
         throw new UnsupportedOperationException();
     }
 }
