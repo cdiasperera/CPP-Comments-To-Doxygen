@@ -7,23 +7,35 @@ import Core.Convertor.FileContentTypes.DocumentationComments.Elements.Summary;
 import java.util.ArrayList;
 
 public class DocumentationCommentBuilder {
+    ArrayList<Param> params;
+    Return aReturn;
+    Summary summary;
+    String content;
     public DocumentationCommentBuilder addParams(ArrayList<Param> params) {
-        throw new UnsupportedOperationException();
+        this.params = params;
+        return this;
     }
 
     public DocumentationCommentBuilder addReturn(Return aReturn) {
-        throw new UnsupportedOperationException();
+        this.aReturn = aReturn;
+        return this;
     }
 
     public DocumentationCommentBuilder addSummary(Summary summary) {
-        throw new UnsupportedOperationException();
+        this.summary = summary;
+        return this;
     }
 
     public StandardStyleDocumentationComment buildSSDocumentationComment() {
-        throw new UnsupportedOperationException();
+        return new StandardStyleDocumentationComment(content, params, aReturn, summary);
     }
 
     public DoxygenStyleDocumentationComment buildDoxygenStyleDocumentationComment() {
-       throw new UnsupportedOperationException();
+        return new DoxygenStyleDocumentationComment(content, params, aReturn, summary);
+    }
+
+    public DocumentationCommentBuilder addContent(String content) {
+        this.content = content;
+        return this;
     }
 }

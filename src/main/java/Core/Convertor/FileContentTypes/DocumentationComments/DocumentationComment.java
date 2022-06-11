@@ -17,6 +17,13 @@ public abstract class DocumentationComment extends FileContent {
         extractDocElements();
     }
 
+    public DocumentationComment(String content, ArrayList<Param> params, Return aReturn, Summary summary) {
+        super(content);
+        this.params = params;
+        this.aReturn = aReturn;
+        this.summary = summary;
+    }
+
     private void extractDocElements() {
         throw new UnsupportedOperationException();
     }

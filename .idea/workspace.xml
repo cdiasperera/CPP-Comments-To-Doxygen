@@ -5,14 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/CodeExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/CodeExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/DoxygenStyleDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/DoxygenStyleDocumentationCommentExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/FileContentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/FileContentExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/NonDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/NonDocumentationCommentExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/StandardStyleDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/StandardStyleDocumentationCommentExtractor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationCommentBuilder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationCommentBuilder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -62,6 +60,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Core.Convertor.FileContentTypes.DocumentationComments" />
       <recent name="Core.Convertor.Parser.FileContentParser" />
       <recent name="Core.Convertor.Parser" />
       <recent name="Convertor" />
@@ -158,7 +157,7 @@
       <workItem from="1654780648740" duration="5727000" />
       <workItem from="1654803161018" duration="2093000" />
       <workItem from="1654935008571" duration="859000" />
-      <workItem from="1654937222026" duration="977000" />
+      <workItem from="1654937222026" duration="2707000" />
     </task>
     <servers />
   </component>
