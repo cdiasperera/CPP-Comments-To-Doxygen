@@ -16,6 +16,11 @@ public class StandardStyleDocumentationComment extends DocumentationComment {
     }
 
     @Override
+    protected void parseDocElements() {
+        throw new UnsupportedOperationException();
+    }
+
+    @Override
     public DoxygenStyleDocumentationComment generateConvertedComment() {
         return new DocumentationCommentBuilder()
                 .addParams(params)

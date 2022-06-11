@@ -14,7 +14,7 @@ public abstract class DocumentationComment extends FileContent {
 
     public DocumentationComment(String content) {
         super(content);
-        extractDocElements();
+        parseDocElements();
     }
 
     public DocumentationComment(String content, ArrayList<Param> params, Return aReturn, Summary summary) {
@@ -24,9 +24,7 @@ public abstract class DocumentationComment extends FileContent {
         this.summary = summary;
     }
 
-    private void extractDocElements() {
-        throw new UnsupportedOperationException();
-    }
+    protected abstract void parseDocElements();
 
     public abstract DocumentationComment generateConvertedComment();
 }
