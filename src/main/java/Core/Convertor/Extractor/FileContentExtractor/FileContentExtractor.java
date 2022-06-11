@@ -1,16 +1,16 @@
-package Core.Convertor.Parser.FileContentParser;
+package Core.Convertor.Extractor.FileContentExtractor;
 
 import Core.Convertor.FileContentTypes.FileContent;
 
 import java.util.Scanner;
 
-public abstract class FileContentParser {
-    public static FileContentParser[] getAllParsers() {
-        return new FileContentParser[]{
-                new CodeParser(),
-                new NonDocumentationCommentParser(),
-                new DoxygenStyleDocumentationCommentParser(),
-                new StandardStyleDocumentationCommentParser()
+public abstract class FileContentExtractor {
+    public static FileContentExtractor[] getAllParsers() {
+        return new FileContentExtractor[]{
+                new CodeExtractor(),
+                new NonDocumentationCommentExtractor(),
+                new DoxygenStyleDocumentationCommentExtractor(),
+                new StandardStyleDocumentationCommentExtractor()
         };
     }
 

@@ -4,7 +4,7 @@ import Core.Convertor.FileContentTypes.Code;
 import Core.Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
 import Core.Convertor.FileContentTypes.FileContent;
 import Core.Convertor.FileContentTypes.NonDocumentationComment;
-import Core.Convertor.Parser.FileParser;
+import Core.Convertor.Extractor.FileExtractor;
 import Core.Exceptions.ConvertorNoStringException;
 
 import java.util.ArrayList;
@@ -38,12 +38,12 @@ public abstract class Convertor {
     }
 
     private String convertString() {
-        FileParser fileParser = new FileParser(toConvert);
+        FileExtractor fileExtractor = new FileExtractor(toConvert);
 
         // Extract file contents
         ArrayList<DocumentationComment> comments = getDocumentationComments();
-        ArrayList<Code> codes = fileParser.getCodes();
-        ArrayList<NonDocumentationComment> nonDocumentationComments = fileParser.getNonDocumentationComments();
+        ArrayList<Code> codes = fileExtractor.getCodes();
+        ArrayList<NonDocumentationComment> nonDocumentationComments = fileExtractor.getNonDocumentationComments();
 
         ArrayList<DocumentationComment> convertedComments = convertComments(comments);
 

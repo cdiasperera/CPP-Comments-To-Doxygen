@@ -1,9 +1,9 @@
-package Core.Convertor.Parser.FileContentParser;
+package Core.Convertor.Extractor.FileContentExtractor;
 
 import Core.Convertor.FileContentTypes.DocumentationComments.StandardStyleDocumentationComment;
 import Core.Convertor.FileContentTypes.FileContent;
 
-public class StandardStyleDocumentationCommentParser extends FileContentParser {
+public class StandardStyleDocumentationCommentExtractor extends FileContentExtractor {
     private boolean insideComment = false;
     @Override
     protected FileContent constructFileContent(String fileContentAsString) {

@@ -1,4 +1,4 @@
-package Core.Convertor.Parser;
+package Core.Convertor.Extractor;
 
 import Core.Convertor.FileContentTypes.Code;
 import Core.Convertor.FileContentTypes.DocumentationComments.DocumentationComment;
@@ -6,25 +6,25 @@ import Core.Convertor.FileContentTypes.DocumentationComments.DoxygenStyleDocumen
 import Core.Convertor.FileContentTypes.DocumentationComments.StandardStyleDocumentationComment;
 import Core.Convertor.FileContentTypes.FileContent;
 import Core.Convertor.FileContentTypes.NonDocumentationComment;
-import Core.Convertor.Parser.FileContentParser.FileContentParser;
+import Core.Convertor.Extractor.FileContentExtractor.FileContentExtractor;
 
 import java.util.ArrayList;
 
-public class FileParser {
+public class FileExtractor {
     private final ArrayList<FileContent> fileContents = new ArrayList<>();
-    public FileParser(String fileContentsAsString) {
+    public FileExtractor(String fileContentsAsString) {
         parse(fileContentsAsString);
     }
 
     private void parse(String fileContentsAsString) {
 
-        FileContentParser[] parsersArray = FileContentParser.getAllParsers();
+        FileContentExtractor[] parsersArray = FileContentExtractor.getAllParsers();
 
         String copy = fileContentsAsString;
 
         int currentPosition = 0;
         while (!copy.isEmpty()) {
-            for (FileContentParser parser : parsersArray) {
+            for (FileContentExtractor parser : parsersArray) {
                 FileContent parsedContent = parser.parse(copy);
                 if (!parsedContent.getContentAsString().isEmpty()) {
                     copy = parser.getContentAfterParsing(copy);

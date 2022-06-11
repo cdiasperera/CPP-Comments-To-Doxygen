@@ -1,9 +1,9 @@
-package Core.Convertor.Parser.FileContentParser;
+package Core.Convertor.Extractor.FileContentExtractor;
 
 import Core.Convertor.FileContentTypes.Code;
 import Core.Convertor.FileContentTypes.FileContent;
 
-public class CodeParser extends FileContentParser {
+public class CodeExtractor extends FileContentExtractor {
 
     @Override
     protected FileContent constructFileContent(String fileContentAsString) {
