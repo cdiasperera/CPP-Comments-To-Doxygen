@@ -5,8 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0c34a3d9-26f2-4879-a4ff-a9f7f4090f49" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/StandardStyleDocumentationComment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/FileContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/CodeExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/CodeExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/DoxygenStyleDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/DoxygenStyleDocumentationCommentExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/FileContentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/FileContentExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/NonDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/NonDocumentationCommentExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/StandardStyleDocumentationCommentExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileContentExtractor/StandardStyleDocumentationCommentExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileExtractor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/Extractor/FileExtractor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DocumentationComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Core/Convertor/FileContentTypes/DocumentationComments/DoxygenStyleDocumentationComment.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +26,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -152,6 +158,7 @@
       <workItem from="1654780648740" duration="5727000" />
       <workItem from="1654803161018" duration="2093000" />
       <workItem from="1654935008571" duration="859000" />
+      <workItem from="1654937222026" duration="977000" />
     </task>
     <servers />
   </component>

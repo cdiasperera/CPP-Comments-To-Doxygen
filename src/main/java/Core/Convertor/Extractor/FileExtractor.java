@@ -13,21 +13,21 @@ import java.util.ArrayList;
 public class FileExtractor {
     private final ArrayList<FileContent> fileContents = new ArrayList<>();
     public FileExtractor(String fileContentsAsString) {
-        parse(fileContentsAsString);
+        extract(fileContentsAsString);
     }
 
-    private void parse(String fileContentsAsString) {
+    private void extract(String fileContentsAsString) {
 
-        FileContentExtractor[] parsersArray = FileContentExtractor.getAllParsers();
+        FileContentExtractor[] parsersArray = FileContentExtractor.getAllExtractors();
 
         String copy = fileContentsAsString;
 
         int currentPosition = 0;
         while (!copy.isEmpty()) {
             for (FileContentExtractor parser : parsersArray) {
-                FileContent parsedContent = parser.parse(copy);
+                FileContent parsedContent = parser.extractor(copy);
                 if (!parsedContent.getContentAsString().isEmpty()) {
-                    copy = parser.getContentAfterParsing(copy);
+                    copy = parser.getContentAfterExtraction(copy);
                     parsedContent.setPosition(currentPosition);
                     ++currentPosition;
                     fileContents.add(parsedContent);

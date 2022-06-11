@@ -11,7 +11,7 @@ public class CodeExtractor extends FileContentExtractor {
     }
 
     @Override
-    protected boolean endsParsedItem(String currLine) {
+    protected boolean endsExtractedItem(String currLine) {
         return currLine.matches("\s*//.*") || currLine.matches("\s*/\\*\\*.*");
     }
 }

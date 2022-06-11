@@ -11,7 +11,7 @@ public class StandardStyleDocumentationCommentExtractor extends FileContentExtra
     }
 
     @Override
-    protected boolean endsParsedItem(String currLine) {
+    protected boolean endsExtractedItem(String currLine) {
         // Check if we have opened a comment.
         if (currLine.matches("\s*/\\*\\*.*")) {
             insideComment = true;

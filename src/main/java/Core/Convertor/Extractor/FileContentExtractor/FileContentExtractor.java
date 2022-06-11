@@ -5,7 +5,7 @@ import Core.Convertor.FileContentTypes.FileContent;
 import java.util.Scanner;
 
 public abstract class FileContentExtractor {
-    public static FileContentExtractor[] getAllParsers() {
+    public static FileContentExtractor[] getAllExtractors() {
         return new FileContentExtractor[]{
                 new CodeExtractor(),
                 new NonDocumentationCommentExtractor(),
@@ -14,14 +14,14 @@ public abstract class FileContentExtractor {
         };
     }
 
-    public FileContent parse(String copy) {
+    public FileContent extractor(String copy) {
         Scanner scanner = new Scanner(copy);
 
         StringBuilder sb = new StringBuilder();
 
         while (scanner.hasNextLine()) {
             String currLine = scanner.nextLine();
-            if (!endsParsedItem(currLine)) {
+            if (!endsExtractedItem(currLine)) {
                 sb.append(currLine).append("\n");
             } else {
                 break;
@@ -33,16 +33,16 @@ public abstract class FileContentExtractor {
 
     protected abstract FileContent constructFileContent(String fileContentAsString);
 
-    protected abstract boolean endsParsedItem(String currLine);
+    protected abstract boolean endsExtractedItem(String currLine);
 
-    public String getContentAfterParsing(String copy) {
+    public String getContentAfterExtraction(String copy) {
         Scanner scanner = new Scanner(copy);
 
         StringBuilder sb = new StringBuilder();
 
         while (scanner.hasNextLine()) {
             String currLine = scanner.nextLine();
-            if(endsParsedItem(currLine)) {
+            if(endsExtractedItem(currLine)) {
                 sb.append(currLine).append("\n");
                 break;
             }

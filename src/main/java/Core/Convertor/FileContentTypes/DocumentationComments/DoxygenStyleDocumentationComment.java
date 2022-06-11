@@ -6,7 +6,11 @@ public class DoxygenStyleDocumentationComment extends DocumentationComment {
     }
 
     @Override
-    public DoxygenStyleDocumentationComment generateConvertedComment() {
-        throw new UnsupportedOperationException();
+    public StandardStyleDocumentationComment generateConvertedComment() {
+        return new DocumentationCommentBuilder()
+                .addParams(params)
+                .addReturn(aReturn)
+                .addSummary(summary)
+                .buildSSDocumentationComment();
     }
 }

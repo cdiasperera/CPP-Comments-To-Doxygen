@@ -10,7 +10,7 @@ public class DoxygenStyleDocumentationCommentExtractor extends FileContentExtrac
     }
 
     @Override
-    protected boolean endsParsedItem(String currLine)  {
+    protected boolean endsExtractedItem(String currLine)  {
         return !currLine.matches("\s*///.*");
     }
 

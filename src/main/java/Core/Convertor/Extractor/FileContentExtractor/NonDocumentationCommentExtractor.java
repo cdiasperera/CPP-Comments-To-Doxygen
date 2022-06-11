@@ -11,7 +11,7 @@ public class NonDocumentationCommentExtractor extends FileContentExtractor {
     }
 
     @Override
-    protected boolean endsParsedItem(String currLine) {
+    protected boolean endsExtractedItem(String currLine) {
         if (commentAlreadyParsed) {
             return true;
         }
